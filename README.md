@@ -1,5 +1,5 @@
 See demo 
-[http://cart-comp-demo.surge.sh/](Demo)
+[http://cart-comp-demo.surge.sh/](http://cart-comp-demo.surge.sh/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
