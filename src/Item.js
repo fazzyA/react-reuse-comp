@@ -9,7 +9,7 @@ export const Item = (props) => {
     const newItem = { name: props.name, price: props.price,id:uniqid() };
     setCart(currentState => [...currentState, newItem]);
   }
-  console.log(props.pic)
+ // console.log(props.pic)
   return (
     <div className='tshirt-box'>
       <img src={props.pic} alt='shoes' className='product-pic' />

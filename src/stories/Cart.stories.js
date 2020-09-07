@@ -6,4 +6,7 @@ export default {
     title: 'Cart',
     component: Cart
 }
+
 export const cartStory = () => <Cart />
+
+  

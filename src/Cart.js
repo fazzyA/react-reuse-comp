@@ -4,16 +4,17 @@ import {CartContext} from './CartContext';
 
 const Cart = () => {
   const [cart, setCart] = useContext(CartContext);
-  const totalPrice = cart.reduce((acc, curr) => acc + curr.price, 0);
-
+  const totalPrice = cart.length > 0 ? cart.reduce((acc, curr) => acc + curr.price, 0)
+  : 0;
+console.log(cart);
   return (
     <div className='cart-box'>
-      {/* <h3>Cart summary</h3> */}
-      <span>items: {cart.length}</span>
+      mycart
+      <h3>Cart summary</h3>
+      <span>items: {cart.length > 0 ? cart.length : ''}</span>
       <br />
       <span>total: {totalPrice}</span>
       <br />
-      {/* <Link to="/cart">view cart</Link> */}
     </div>
   )
 }
