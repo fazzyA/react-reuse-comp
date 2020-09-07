@@ -6,9 +6,10 @@ import {
   Link
 } from "react-router-dom";
 import CartItem from "./CartItem";
+import CartTable from "./CartTable";
 import Footer from './Footer';
 import { ProductList } from './ProductList';
-import { Cart } from './Cart';
+import Cart  from './Cart';
 
 
 export default function Nav() {
@@ -37,7 +38,7 @@ export default function Nav() {
           <Footer />
           </Route>
           <Route exact path="/cart">
-            <CartItem />
+            <CartTable />
           </Route>
         </Switch>
       </div>
