@@ -1,0 +1,7 @@
+     <ctx.Provider value={{cart:[{name:testpro,price:12,id:180,pic:''}]}}> 
+    <ctx.Provider value={[{name:'testpro',price:12,id:180,pic:''}]}>
+     <ctx.Consumer>
+         {value => <div>{value}</div>}
+    // {/* <Cart /> */}
+     </ctx.Consumer>
+  </ctx.Provider>
