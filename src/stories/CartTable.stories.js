@@ -1,18 +1,18 @@
 import React from 'react';
 
-import CartItem from '../CartItem';
+import CartTable from '../CartTable';
 import {CartProvider,CartContext} from '../CartContext';
 
 export default {
     title: 'Cart With Items',
-    component: CartItem
+    component: CartTable
 }
 
-export const cartItemStory = () => {
+export const cartTableStory = () => {
 
 return (
 <CartProvider>
-    <CartItem />
+    <CartTable />
 </CartProvider>
 )
 }
